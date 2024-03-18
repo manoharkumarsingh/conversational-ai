@@ -9,7 +9,6 @@ import { streamAdapter } from "./adapter";
 import { botStyle } from "./personas";
 
 function App() {
-  const [count, setCount] = useState(0);
   const adapter = useMemo(() => streamAdapter, []);
   const [formVisibility, setFormVisibility] = useState(false);
 
