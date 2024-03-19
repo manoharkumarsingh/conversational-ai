@@ -24,7 +24,7 @@ function App() {
               },
             }}
             layoutOptions={{
-              height: 400,
+              height: "90vh",
               width: 500,
             }}
           />
