@@ -80,6 +80,9 @@ button:focus-visible {
   border-radius: 10px !important;
 }
 
-.nluxc-conversation-welcome-message {
-  overflow: auto;
+.nluxc-root
+  > .nluxc-chat-room-container
+  > .nluxc-chat-room-conversation-container
+  > .nluxc-conversation-messages-container {
+  overflow: auto !important;
 }
