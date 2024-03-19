@@ -79,3 +79,7 @@ button:focus-visible {
 .nluxc-prompt-box-send-button {
   border-radius: 10px !important;
 }
+
+.nluxc-conversation-welcome-message {
+  overflow: auto;
+}
