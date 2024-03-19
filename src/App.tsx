@@ -24,9 +24,8 @@ function App() {
               },
             }}
             layoutOptions={{
-              height: 600,
+              height: 700,
               width: 500,
-              maxWidth: 600,
             }}
           />
         </div>
