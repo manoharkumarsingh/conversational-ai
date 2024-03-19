@@ -23,32 +23,27 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="chat-popup" id="myForm">
+        <div className="form-container">
+          <AiChat
+            className="custom-ai-chat-comp"
+            adapter={adapter}
+            personaOptions={{
+              bot: {
+                name: "iBot",
+                picture: <span style={botStyle}>🤖</span>,
+                tagline: "Your Genius AI Assistant",
+              },
+            }}
+            layoutOptions={{
+              height: 600,
+              width: 500,
+              maxWidth: 600,
+            }}
+          />
+        </div>
       </div>
-      <h1>Conversational AI</h1>
-
-      <p className="read-the-docs" style={{ width: "500px" }}>
-        Welcome to the nlux learning resources. This section provides detailed
-        guides and examples to help you master building conversational AI
-        interfaces powered by nlux.
-      </p>
-
-      <div
-        style={{
-          background: "white",
-          padding: "20px",
-          right: 0,
-          position: "relative",
-        }}
-      ></div>
-
-      {formVisibility ? (
+      {/* {formVisibility ? (
         <div className="chat-popup" id="myForm">
           <div className="form-container">
             <div className="close">
@@ -87,7 +82,7 @@ function App() {
         <button className="open-button" onClick={() => openForm()}>
           Chat
         </button>
-      )}
+      )} */}
     </>
   );
 }
