@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useMemo } from "react";
 import "./App.css";
 import { AiChat } from "@nlux/react";
 import "@nlux/themes/nova.css";
@@ -8,16 +8,6 @@ import { botStyle } from "./personas";
 
 function App() {
   const adapter = useMemo(() => streamAdapter, []);
-  const [formVisibility, setFormVisibility] = useState(false);
-
-  const openForm = () => {
-    setFormVisibility(true);
-  };
-  const closeForm = () => {
-    setFormVisibility(false);
-  };
-
-  console.log(formVisibility);
 
   return (
     <>
